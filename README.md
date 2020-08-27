@@ -34,6 +34,7 @@ The manufacturer is obtained from the oui identifier.
 ![Wifi table](wifi&.png)
 
 During a scan, everytime a user is detected the RSSI detected with it is added to a list (unique for each user) and then at the end of the scan we calculate the mean and the standard deviation. See the photo below. 
+![list of RSSIs](list.png)
 
 ### Bluetooth table 
 
