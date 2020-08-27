@@ -41,6 +41,7 @@ During a scan, everytime an user is detected the RSSI detected with it is added 
 For the Bluetooth we are storing the timestamp, the hash and coded mac address source, the RSSI, the manufacturer and the time spent value.
 
 ![Bluetooth table](bluetootht.png)
+
 ----------------
 ## Scans
 ### Wi-Fi scan 
