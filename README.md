@@ -28,6 +28,8 @@ The application is developped with Dash for Python (photo below).
 
 ### Wi-Fi table 
 
+![Wifi table](Wifi.png)
+
 ### Bluetooth table 
 
 ----------------
