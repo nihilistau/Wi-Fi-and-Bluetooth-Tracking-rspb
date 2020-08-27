@@ -2,6 +2,7 @@
 
 This project is about analyzing network activity for both Wi-Fi and Bluetooth in order to determine how people use the place. 
 The image below describes the way the project works. Every minute a Bluetooth and Wi-Fi scans are done, the results are stored in two different tables in a database and then printed on a dash application. Everything is done using a Raspberry Pi 3B+.
+
 ![States of the project](states.png)
 
 --------------
