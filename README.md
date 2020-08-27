@@ -25,6 +25,7 @@ The application is developped with Dash for Python (photo below).
 
 ---------------
 ## Database 
+
 ### Wi-Fi table 
 
 ### Bluetooth table 
