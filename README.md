@@ -25,10 +25,15 @@ The application is developped with Dash for Python (photo below).
 
 ---------------
 ## Database 
+There's one database that contains two tables, one for the results of the Wi-Fi and the other for the Bluetooth.
 
 ### Wi-Fi table 
 
+As for the Wi-Fi we are storing the timestamp, the hash and coded mac address source, the mean RSSI, the standard deviation of the RSSI, the manufacturer, the SSID and the time spent value.
+The manufacturer is obtained from the oui identifier. 
 ![Wifi table](wifi&.png)
+
+During a scan, everytime a user is detected the RSSI detected with it is added to a list (unique for each user) and then at the end of the scan we calculate the mean and the standard deviation. See the photo below. 
 
 ### Bluetooth table 
 
