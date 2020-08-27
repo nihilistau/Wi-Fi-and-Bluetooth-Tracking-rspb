@@ -32,6 +32,7 @@ The application is developped with Dash for Python (photo below).
 
 ### Bluetooth table 
 
+![Bluetooth table](bluetootht.png)
 ----------------
 ## Scans
 ### Wi-Fi scan 
