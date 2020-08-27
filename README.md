@@ -46,6 +46,6 @@ For the Bluetooth we are storing the timestamp, the hash and coded mac address s
 ### Wi-Fi scan 
 
 Each Wi-Fi scan lasts 10 seconds and is done using a Tshark command. The results are then treated and added to the database if it's a new user else it's updated.
-For the Raspberry Pi to do such, it has to have the monitor mode (iw phy phy0 info) if it doesn't you can[ patch the firmware] to have it.(https://pimylifeup.com/raspberry-pi-nexmon/)
+For the Raspberry Pi to do such, it has to have the monitor mode (iw phy phy0 info) if it doesn't you can [patch the firmware to have it.](https://pimylifeup.com/raspberry-pi-nexmon/)
 
 ### Bluetooth scan
