@@ -29,19 +29,25 @@ There's one database that contains two tables, one for the results of the Wi-Fi 
 
 ### Wi-Fi table 
 
-As for the Wi-Fi we are storing the timestamp, the hash and coded mac address source, the mean RSSI, the standard deviation of the RSSI, the manufacturer, the SSID and the time spent value.
+For the Wi-Fi we are storing the timestamp, the hash and coded mac address source, the mean RSSI, the standard deviation of the RSSI, the manufacturer, the SSID and the time spent value.
 The manufacturer is obtained from the oui identifier. 
 ![Wifi table](wifi&.png)
 
-During a scan, everytime a user is detected the RSSI detected with it is added to a list (unique for each user) and then at the end of the scan we calculate the mean and the standard deviation. See the photo below. 
+During a scan, everytime an user is detected the RSSI detected with it is added to a list (unique for each user) and then at the end of the scan we calculate the mean and the standard deviation. See the photo below. 
 ![list of RSSIs](list1.png)
 
 ### Bluetooth table 
+
+For the Bluetooth we are storing the timestamp, the hash and coded mac address source, the RSSI, the manufacturer and the time spent value.
 
 ![Bluetooth table](bluetootht.png)
 ----------------
 ## Scans
 ### Wi-Fi scan 
 
+Each Wi-Fi scan lasts 10 seconds and is done using a Tshark command. The results are then treated and added to the database if it's a new user else it's updated.
+For the Raspberry Pi to do such, it has to have the monitor mode. 
+>iw phy phy0 info
+If it doesn't you can[ patch the firmware] to have it.(https://pimylifeup.com/raspberry-pi-nexmon/)
 
 ### Bluetooth scan
