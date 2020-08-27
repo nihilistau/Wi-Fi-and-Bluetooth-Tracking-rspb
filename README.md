@@ -10,7 +10,7 @@ The application is developped with Dash for Python (photo below) and is on a Ras
 1. Title of the tab : During a scan the tab displays "Scanning" else it displays "Wi-Fi and Bluetooth Tracking"
 2. and 3.  Details of the project : link to this GitHub
 4. People currently around : latest scan results (for both)
-5. Ratio : people who we could be missing during our scans because they don't have a smartphone or because they don't have Bluetooth or Wi-Fi on.
+5. Ratio : people who we could be missing during our scans because either they don't have a smartphone or because they don't have Bluetooth or Wi-Fi on.
 6. Total people : number of users found in the database
 7. Average time spent :  When a user is detected we add plus one to a value which means he spent one minute at the place. Then the average is calculated for each user we have found. 
 8. Reset button for the time.
