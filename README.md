@@ -21,3 +21,14 @@ The application is developped with Dash for Python (photo below).
 10. Button to save the data.
 11. Overall detection type graph.
 12. Scatter plot of the results of the scans, the total results and the ratio results.
+
+---------------
+## Database 
+### Wi-Fi table 
+
+### Bluetooth table 
+
+----------------
+## Scans
+### Wi-Fi scan 
+### Bluetooth scan
