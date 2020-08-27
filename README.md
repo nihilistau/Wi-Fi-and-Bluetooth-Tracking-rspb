@@ -36,4 +36,7 @@ The application is developped with Dash for Python (photo below).
 ----------------
 ## Scans
 ### Wi-Fi scan 
+
+![Wifi scan](wire.png)
+
 ### Bluetooth scan
