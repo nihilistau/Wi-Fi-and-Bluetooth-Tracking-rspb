@@ -14,18 +14,21 @@ The application is developped with Dash for Python (photo below).
 1. Title of the tab : During a scan the tab displays "Scanning" else it displays "Wi-Fi and Bluetooth Tracking"
 2. and 3.  Details of the project : link to this GitHub
 4. People currently around : latest scan results (for both)
-5. Ratio : people who we could be missing during our scans because either they don't have a smartphone or because they don't have Bluetooth or Wi-Fi on.
+5. Ratio : people who are not detected during our scans because either they don't have a smartphone or because they don't have Bluetooth or Wi-Fi on.
 6. Total people : number of users found in the database
-7. Average time spent :  When a user is detected we add plus one to a value which means he spent one minute at the place. Then the average is calculated for each user we have found. 
+7. Average time spent :  When a user is detected we add plus one to a value which means he spent one minute at the place. Then the average is calculated for each user found. 
 8. Reset button for the time.
-9. Data state : The results of the scans can be saved to a .txt file and the time is displayed here. 
+9. Data state : The results of the scans can be saved to a .txt file and the date-time is displayed here. 
 10. Button to save the data.
 11. Overall detection type graph.
 12. Scatter plot of the results of the scans, the total results and the ratio results.
 
 ---------------
 ## Database 
-There's one database that contains two tables, one for the results of the Wi-Fi and the other for the Bluetooth.
+There is one database that contains two tables, one for the results of the Wi-Fi and the other for the Bluetooth.
+
+### Mac address hash code
+With the European laws, the user must be anonymous and cannot be identified. I used a hash algorithm for the mac address to anonymize it. 
 
 ### Wi-Fi table 
 
@@ -46,9 +49,11 @@ For the Bluetooth we are storing the timestamp, the hash and coded mac address s
 ## Scans
 ### Wi-Fi scan 
 
-Each Wi-Fi scan lasts 10 seconds and is done using a Tshark command every minute. The results are then treated and added to the database if it's a new user else it's updated.
+Each Wi-Fi scan lasts 10 seconds and is done using a Tshark command. If the user is not in the table, the results are treated and then added to the database else the record is updated with the new values.
 For the Raspberry Pi to do such, it has to have the monitor mode (iw phy phy0 info) if it doesn't you can [patch the firmware to have it.](https://pimylifeup.com/raspberry-pi-nexmon/)
 
 ### Bluetooth scan
 
-Each Bluetooth scan lasts 10 seconds and is done using Bluetoothctl every minute. The results are treated the same way as for the Wi-Fi. 
+Each Bluetooth scan lasts 10 seconds and is done using Bluetoothctl. The results are then treated the same way as for the Wi-Fi.
+
+
